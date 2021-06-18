@@ -23,4 +23,23 @@ public class FindMaxTest {
     void ifNumberThreeIsMaxReturnTrue() {
         Assertions.assertEquals(100, findMax.findMaxNumber(25, 50, 100));
     }
+    /**
+     * Here I have created same as above test case for float
+     * created three test cases which will check and give the test case result.
+     */
+    // Test case for FloatNumberOne is maxnumber than FloatNumberTwo and FloatNumberThree and will return True
+    @Test
+    void ifFloatNumberOneIsMaxReturnTrue() {
+        Assertions.assertEquals(10.0, findMax.findFloatMaxNumber(10.0F, 5.0F, 2.5F));
+    }
+    // Test case for FloatNumberTwo is maxnumber than FloatNumberOne and FloatNumberThree and will return True
+    @Test
+    void ifFloatNumberTwoIsMaxReturnTrue() {
+        Assertions.assertEquals(10.0, findMax.findFloatMaxNumber(5.0F, 10.0F, 2.5F));
+    }
+    // Test case for FloatNumberThree is maxnumber than FloatNumberOne and FloatNumberTwo and will return True
+    @Test
+    void ifFloatNumberThreeIsMaxReturnTrue() {
+        Assertions.assertEquals(10.0, findMax.findFloatMaxNumber(2.5F, 5.0F, 10.0F));
+    }
 }
