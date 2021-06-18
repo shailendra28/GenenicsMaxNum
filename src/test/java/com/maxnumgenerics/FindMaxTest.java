@@ -42,4 +42,19 @@ public class FindMaxTest {
     void ifFloatNumberThreeIsMaxReturnTrue() {
         Assertions.assertEquals(10.0, findMax.findFloatMaxNumber(2.5F, 5.0F, 10.0F));
     }
+    // Test case for StringNumberOne is maxString than StringNumberTwo and StringNumberThree and will return True
+    @Test
+    void ifStringNumberOneIsMaxReturnTrue() {
+        Assertions.assertEquals("peach", findMax.findMaxString("banana", "peach", "apple"));
+    }
+    // Test case for StringNumberTwo is maxString than StringNumberOne and StringNumberThree and will return True
+    @Test
+    void ifStringNumberTwoIsMaxReturnTrue() {
+        Assertions.assertEquals("peach", findMax.findMaxString("apple", "banana", "peach"));
+    }
+    // Test case for StringNumberThree is maxString than StringNumberOne and StringNumberTwo and will return True
+    @Test
+    void ifStringNumberThreeIsMaxReturnTrue() {
+        Assertions.assertEquals("peach", findMax.findMaxString("peach", "apple", "banana"));
+    }
 }

@@ -29,4 +29,18 @@ public class FindMaximum {
         }
         return maxNumber;
     }
+    /**
+     * As above it will work the same but having only float values
+     * return MaxString
+     */
+    public String findMaxString(String apple, String banana, String peach) {
+        String maxString = apple;
+        if (banana.compareTo(maxString) > 0) {
+            maxString = banana;
+        }
+        if (peach.compareTo(maxString) > 0) {
+            maxString = peach;
+        }
+        return maxString;
+    }
 }
