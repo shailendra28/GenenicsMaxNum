@@ -30,7 +30,7 @@ public class FindMaximum {
         return maxNumber;
     }
     /**
-     * As above it will work the same but having only float values
+     * As above it will work the same but having only String values
      * return MaxString
      */
     public String findMaxString(String apple, String banana, String peach) {
