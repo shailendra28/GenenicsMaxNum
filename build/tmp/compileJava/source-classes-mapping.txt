@@ -1,2 +1,4 @@
 com/maxnumgenerics/FindMaximum.java
  com.maxnumgenerics.FindMaximum
+com/maxnumgenerics/TestMaximum.java
+ com.maxnumgenerics.TestMaximum
