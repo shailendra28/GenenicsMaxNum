@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.maxnumgenerics.FindMaxTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-20T21:36:18" hostname="ADMIN-PC" time="0.032">
+<testsuite name="com.maxnumgenerics.FindMaxTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-20T21:59:54" hostname="ADMIN-PC" time="0.083">
   <properties/>
-  <testcase name="ifStringTwoIsMaxReturnTrue()" classname="com.maxnumgenerics.FindMaxTest" time="0.032"/>
+  <testcase name="ifIntegerNumberOneIsMaxReturnTrue()" classname="com.maxnumgenerics.FindMaxTest" time="0.083"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

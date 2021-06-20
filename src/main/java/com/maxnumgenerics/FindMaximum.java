@@ -1,46 +1,19 @@
 package com.maxnumgenerics;
-/**
- * I have created a parameterised constructor having given parameters.
- * First I have taken numberOne as maxNumber
- * then I used compareTo method which will compare with numberOne with numberTwo also with numberThree.
- */
 public class FindMaximum {
-    public int findMaxNumber(Integer numberOne, Integer numberTwo, Integer numberThree) {
-        Integer maxNumber = numberOne;
-        if (numberTwo.compareTo(maxNumber) > 0) {
-            maxNumber = numberTwo;
-        }
-        if (numberThree.compareTo(maxNumber) > 0) {
-            maxNumber = numberThree;
-        }
-        return maxNumber;
-    }
     /**
-     * As above it will work the same but having only float values
-     * return maxnumber
+     * Here I have used Generic functions.
+     * here E is the type of data.
+     * Gradually it will return the max value.
+     * firstValue,secondValue,thirdValue
      */
-    public double findFloatMaxNumber(Float numberOne, Float numberTwo, Float numberThree) {
-        Float maxNumber = numberOne;
-        if (numberTwo.compareTo(maxNumber) > 0) {
-            maxNumber = numberTwo;
+    public <E extends Comparable<E>> E findMax(E firstValue, E secondValue, E thirdValue) {
+        E maxValue = firstValue;
+        if (secondValue.compareTo(maxValue) > 0) {
+            maxValue = secondValue;
         }
-        if (numberThree.compareTo(maxNumber) > 0) {
-            maxNumber = numberThree;
+        if (thirdValue.compareTo(maxValue) > 0) {
+            maxValue = thirdValue;
         }
-        return maxNumber;
-    }
-    /**
-     * As above it will work the same but having only String values
-     * return MaxString
-     */
-    public String findMaxString(String apple, String banana, String peach) {
-        String maxString = apple;
-        if (banana.compareTo(maxString) > 0) {
-            maxString = banana;
-        }
-        if (peach.compareTo(maxString) > 0) {
-            maxString = peach;
-        }
-        return maxString;
+        return maxValue;
     }
 }
